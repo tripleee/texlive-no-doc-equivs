@@ -26,3 +26,6 @@ There is a simple `Makefile` which clones the master `control` file and
 builds a new `equivs` package for each clone,
 and a `Dockerfile` to run this in a suitable fresh Debian image
 and store the results back in the current directory after the build.
+
+If you want builds for other platforms than Debian Stretch and Buster,
+please create a request in the issue tracker here on GitHub.
