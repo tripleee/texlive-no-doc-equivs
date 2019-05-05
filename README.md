@@ -13,8 +13,16 @@ To use this package on Debian Stretch, run
     curl -s https://packagecloud.io/install/repositories/tripleee/texlive-no-doc/script.deb.sh |
     sudo bash
 
-The set of packages are created with an epoch prefix `99:` in the version number
+The packages are created with an epoch prefix `99:` in the version number
 to make sure they are always regarded as newer than the official Debian packages.
 
 Obviously, don't use this for anything except quick and dirty CI where you want to
 make sure you keep the unnecessary documentation out of your system.
+
+Building
+------
+
+There is a simple `Makefile` which clones the master `control` file and
+builds a new `equivs` package for each clone,
+and a `Dockerfile` to run this in a suitable fresh Debian image
+and store the results back in the current directory after the build.
