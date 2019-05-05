@@ -5,11 +5,11 @@ Vcs-Git: https://github.com/tripleee/texlive-no-doc-equivs.git
 Vcs-Browser: https://github.com/tripleee/texlive-no-doc-equivs
 
 Package: texlive-no-doc
-Version: 0.01
+Version: 0.03
 Maintainer: tripleee <tripleee@users.noreply.github.com>
 Architecture: all
 Description: fake package to block a dumb dependencies from texlive
  See also https://tex.stackexchange.com/questions/397174/minimal-texlive-installation
-Provides: texlive-latex-base-doc, texlive-fonts-recommended-doc,
+Depends: texlive-latex-base-doc, texlive-fonts-recommended-doc,
     texlive-latex-extra-doc, texlive-latex-recommended-doc,
     texlive-pictures-doc, texlive-pstricks-doc
